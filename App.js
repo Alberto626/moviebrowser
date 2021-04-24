@@ -75,7 +75,7 @@ const apiCall = async (userInput, data, setRenderList) =>  {
     search = await fetch(`http://www.omdbapi.com/?apikey=33014428&s=${userInput}`)
     .then(response => response.json()) // response is a promise and to access the text, we must convert to a json
       .then(data => { // data is the response.json, does not refer to the parameter
-        console.log(data); return data.Search; // returns the results of array of objects of the movies
+         return data.Search; // returns the results of array of objects of the movies
         }
       )
       if(search) { // if the search is valid
