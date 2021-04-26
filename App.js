@@ -112,7 +112,7 @@ const Description = props => {
     }
     searchByID(props.route.params.imdbID)
 
-  })
+  },[])
   return(
     <SafeAreaView style = {{alignItems: `center`}}>
       <Text style = {{fontWeight: `bold`}}>{movie.Title}</Text>
